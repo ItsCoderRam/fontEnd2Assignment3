@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End 2 Conetest III</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <form action="" class="form" method="post">
+            <div class="email_control">
+               <label for="emaiL">Email</label> 
+               <input type="email" oninput="emailValidation()" name="email" id="email" placeholder="Example@email.com" required />
+               <p id="emailError"></p>
+            </div>
+            <div class="password_control">
+                <label for="password">Password</label>
+                <input type="password" oninput=" passwordValidation()" name="password" id="password" placeholder="Your Password"/>
+                <p id="passwordError"></p>
+             </div>
+             <p id="status"></p>
+             <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
