@@ -10,6 +10,7 @@
 
 
     <div class="container">
+        <div class="form_container">
         <form action="" class="form" method="post">
             <div class="email_control">
                <label for="emaiL">Email</label> 
@@ -17,13 +18,14 @@
                <p id="emailError"></p>
             </div>
             <div class="password_control">
-                <label for="password">Password</label>
-                <input type="password" oninput=" passwordValidation()" name="password" id="password" placeholder="Your Password"/>
+                <label for="password" id="psl">Password</label>
+                <input type="password" oninput="passwordValidation()" name="password" id="password" placeholder="Your Password" required/>
                 <p id="passwordError"></p>
              </div>
              <p id="status"></p>
              <button class="btn" type="submit">Submit</button>
         </form>
+    </div>
     </div>
 
     <script src="./index.js"></script>

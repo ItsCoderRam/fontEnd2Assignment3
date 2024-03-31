@@ -22,7 +22,7 @@ function passwordValidation(){
      document.getElementById("passwordError").style.color = "red";
     }
     else {
-    
+      document.getElementById("passwordError").innerHTML=" ";
         document.getElementById("status").innerHTML = "All good to go!";
         // document.getElementById("status").style.color = "green";
     }
